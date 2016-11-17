@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">EmbedStock</string>
+    <string name="action_settings">Settings</string>
+    <string name="descricaoLogo">EmbedStock</string>
+    <string name="label_usuario">Usuário:</string>
+    <string name="label_senha">Senha:</string>
+    <string name="enviar">Enviar</string>
+    <string name="sair">Sair</string>
+    <string name="entrada_produto">Entrada Produto</string>
+    <string name="consulta_estoque">Consulta Estoque</string>
+    <string name="trocar_senha">Cadastro Usuário</string>
+    <string name="autenticacao">Autenticação</string>
+    <string name="confirma_senha">Confirma Senha:</string>
+    <string name="menu_principal">Menu Principal</string>
+    <string name="estoque">Estoque</string>
+    <string name="produto">Produto</string>
+    <string name="codigo">Código:</string>
+    <string name="descricao">Descrição:</string>
+    <string name="codigo_barras">Código Barras:</string>
+    <string name="quantidade">Qtd:</string>
+    <string name="ativo">Ativo?</string>
+    <string name="consulta">Consulta</string>
+    <string name="consulta_estoque_scanner">Código de Barras</string>
+    <string name="fabricante">Fabricante:</string>
+    <string name="local">Local:</string>
+    <string name="nivel_usuario">Nivel Usuário:</string>
+    <array name="niveis">
+        <item>Administrador</item>
+        <item>Gerente</item>
+        <item>Operador</item>
+    </array>
+
+</resources>

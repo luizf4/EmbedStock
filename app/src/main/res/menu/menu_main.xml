@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+    <item
+        android:id="@+id/consultar_estoque"
+        android:orderInCategory="1"
+        android:title="@string/consulta_estoque"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/entrada_produto"
+        android:orderInCategory="2"
+        android:title="@string/entrada_produto"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/trocar_senha"
+        android:orderInCategory="3"
+        android:title="@string/trocar_senha"
+        app:showAsAction="never"/>
+</menu>

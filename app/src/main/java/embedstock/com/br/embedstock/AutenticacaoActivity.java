@@ -22,6 +22,7 @@ public class AutenticacaoActivity extends Activity {
         setContentView(R.layout.autenticacao);
         dbUsuario = new BDEmbedStock(this);
 
+
     }
 
     public void autenticar(View view) {
@@ -32,26 +33,24 @@ public class AutenticacaoActivity extends Activity {
 
         user.setUsuario(usuario.getText().toString());
         user.setSenha(usuario.getText().toString());
+        user.setNivel_Acesso("1");
+        dbUsuario.salvarUsuario(user);
 
-        /*if(dbUsuario.autenticarUsuario(usuario.getText().toString(),
+        if(dbUsuario.autenticarUsuario(usuario.getText().toString(),
                 senha.getText().toString()) == true){
-
 
             Toast.makeText(this, "Usuário " + usuario.getText() +
                     " Autenticado", Toast.LENGTH_SHORT).show();
             startActivity(new Intent(this, MainActivity.class));
-            limpaCaixas();
-
+            //limpaCaixas();
+            finish();
 
         }else{
 
             Toast.makeText(this, "Usuário ou Senha incorreto", Toast.LENGTH_SHORT).show();
             limpaCaixas();
 
-        }*/
-
-        startActivity(new Intent(this, MainActivity.class));
-
+        }
     }
 
     /**

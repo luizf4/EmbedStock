@@ -12,11 +12,19 @@ import embedstock.com.br.embedstock.model.Usuario;
 
 public class BDEmbedStock extends SQLiteOpenHelper {
 
+    final String tabela_produto = "CREATE TABLE Produto (id_produto integer " +
+            "PRIMARY KEY AUTOINCREMENT, id_fabricante integer NOT NULL, " +
+            "descricao VARCHAR(200) NOT NULL, ativo integer NOT NULL, foto TEXT);";
 
+    final String tabela_estoque = "CREATE TABLE estoque (id_estoque integer PRIMARY KEY AUTOINCREMENT" +
+            " , id_produto integer NOT NULL, quantidade integer, local TEXT);";
+
+    final String tabela_fabricante = "CREATE TABLE fabricante (id_fabricante integer PRIMARY KEY" +
+            " AUTOINCREMENT NOT NULL, descricao TEXT NOT NULL);";
 
     public BDEmbedStock(Context context){
 
-        super(context, "Usuario", null, 1);
+        super(context, "EmbedStock", null, 1);
 
     }
 
@@ -31,12 +39,13 @@ public class BDEmbedStock extends SQLiteOpenHelper {
                 " usuario text NOT NULL UNIQUE, senha text not null," +
                 " nivel_acesso text NOT NULL);");
 
-
+        db.execSQL(tabela_fabricante);
+        db.execSQL(tabela_produto);
+        db.execSQL(tabela_estoque);
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int oldVersion, int newVersion) {
-
 
 
     }

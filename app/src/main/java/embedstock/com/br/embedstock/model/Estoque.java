@@ -1,12 +1,12 @@
 package embedstock.com.br.embedstock.model;
 
-
 public class Estoque {
 
     private Long id_Estoque;
     private Long id_Produto;
     private int quantidade;
     private String local;
+    private Produto produto;
 
     public Estoque(Long id_Estoque, Long id_Produto, String local, int quantidade) {
         this.id_Estoque = id_Estoque;

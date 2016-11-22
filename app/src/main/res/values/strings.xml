@@ -6,8 +6,8 @@
     <string name="label_senha">Senha:</string>
     <string name="enviar">Enviar</string>
     <string name="sair">Sair</string>
-    <string name="entrada_produto">Entrada Produto</string>
-    <string name="consulta_estoque">Consulta Estoque</string>
+    <string name="entrada_produto">Produto</string>
+    <string name="consulta_estoque">Estoque</string>
     <string name="trocar_senha">Cadastro Usuário</string>
     <string name="autenticacao">Autenticação</string>
     <string name="confirma_senha">Confirma Senha:</string>
@@ -24,10 +24,32 @@
     <string name="fabricante">Fabricante:</string>
     <string name="local">Local:</string>
     <string name="nivel_usuario">Nivel Usuário:</string>
+    <string name="usuario">USUÁRIO</string>
+    <string name="barcode">|I||I||</string>
     <array name="niveis">
         <item>Administrador</item>
         <item>Gerente</item>
         <item>Operador</item>
+    </array>
+    <array name="locais_estoque">
+        <item>P001</item>
+        <item>P002</item>
+        <item>P003</item>
+        <item>P004</item>
+        <item>P005</item>
+        <item>P006</item>
+        <item>P007</item>
+        <item>P008</item>
+        <item>P009</item>
+        <item>P010</item>
+    </array>
+    <array name="fabricantes">
+        <item>Fabricante01</item>
+        <item>Fabricante02</item>
+        <item>Fabricante03</item>
+        <item>Fabricante04</item>
+        <item>Fabricante05</item>
+        <item>Fabricante06</item>
     </array>
 
 </resources>

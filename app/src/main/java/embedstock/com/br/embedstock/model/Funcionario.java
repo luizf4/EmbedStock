@@ -1,8 +1,5 @@
 package embedstock.com.br.embedstock.model;
 
-/**
- * Created by Luiz on 12/10/2016.
- */
 
 public class Funcionario {
 

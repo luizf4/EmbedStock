@@ -3,15 +3,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".MainActivity">
     <item
-        android:id="@+id/consultar_estoque"
+        android:id="@+id/entrada_produto"
         android:orderInCategory="1"
-        android:title="@string/consulta_estoque"
+        android:title="@string/entrada_produto"
         app:showAsAction="never"/>
     <item
-        android:id="@+id/entrada_produto"
+        android:id="@+id/consultar_estoque"
         android:orderInCategory="2"
-        android:title="@string/entrada_produto"
-        app:showAsAction="never" />
+        android:title="@string/consulta_estoque"
+        app:showAsAction="never"/>
+
     <item
         android:id="@+id/trocar_senha"
         android:orderInCategory="3"

@@ -2,14 +2,13 @@ package embedstock.com.br.embedstock;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import embedstock.com.br.embedstock.model.Estoque;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -42,14 +41,33 @@ public class MainActivity extends AppCompatActivity {
             return true;
         }else if(id == R.id.consultar_estoque){
 
-            startActivity(new Intent(this, ConsultaEstoqueActivity.class));
+            startActivity(new Intent(this, EstoqueActivity.class));
             return true;
         }else if (id == R.id.entrada_produto){
 
-            startActivity(new Intent (this, EntradaProdutoActivity.class));
+            startActivity(new Intent (this, ProdutoActivity.class));
             return true;
         }
 
         return super.onOptionsItemSelected(item);
     }
+
+    public void telaProduto(View view){
+
+            startActivity(new Intent(this, ProdutoActivity.class));
+
+    }
+
+    public void telaEstoque(View view){
+
+        startActivity(new Intent(this, EstoqueActivity.class));
+
+    }
+
+    public void cadastroUsuario(View view){
+
+        startActivity(new Intent(this, TrocaSenhaActivity.class));
+
+    }
+
 }
